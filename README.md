@@ -1,4 +1,35 @@
-openshift-openmeap-quickstart
-=============================
+Run your Tomcat on OpenShift
+============================
 
-Quickstart to run OpenMEAP on OpenShift
+This git repository helps you get up and running quickly w/ a tomcat installation on OpenShift.
+
+Create a DIY app on OpenShift
+----------------------------
+
+Create an account at http://openshift.redhat.com/ , don't forget to create a namespace and install client tools as well.
+
+Create a DIY application
+
+    rhc app create -a tomcat -t diy-0.1
+
+Get Tomcat running
+----------------------------
+Grab this quickstart codes and make it working for you!
+
+    cd tomcat
+    git remote add upstream -m master git://github.com/openshift/openshift-tomcat-quickstart.git
+    git pull -s recursive -X theirs upstream master
+    git push
+
+That's it, you can now checkout your tomcat at:
+
+    http://tomcat-$yournamespace.rhcloud.com
+
+The default managing account is tomcat/openshift
+
+License
+-------
+
+This code is dedicated to the public domain to the maximum extent
+permitted by applicable law, pursuant to CC0
+http://creativecommons.org/publicdomain/zero/1.0/
