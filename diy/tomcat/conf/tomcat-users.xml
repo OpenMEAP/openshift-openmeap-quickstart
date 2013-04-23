@@ -33,6 +33,8 @@
   <user username="both" password="tomcat" roles="tomcat,role1"/>
   <user username="role1" password="tomcat" roles="role1"/>
 -->
-  <role rolename="manager-gui"/>
-  <user username="tomcat" password="openshift" roles="manager-gui"/>
+    <role rolename="openmeap-admin"/>
+    <role rolename="openmeap-user"/>
+    <role rolename="manager-gui"/>
+    <user username="openshift" password="openmeap" roles="openmeap-admin,openmeap-user,manager-gui"/>
 </tomcat-users>
