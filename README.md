@@ -12,7 +12,7 @@ Create a DIY application
 
     rhc app create -a openmeap -t diy-0.1
 
-Get Tomcat running
+Get Tomcat running OpenMEAP
 ----------------------------
 Grab this quickstart codes and make it working for you!
 
@@ -23,7 +23,7 @@ Grab this quickstart codes and make it working for you!
 
 That's it, you can now checkout your tomcat at:
 
-    http://tomcat-$yournamespace.rhcloud.com
+    http://openmeap-$yournamespace.rhcloud.com
 
 The default managing account is openmeap/openshift
 
