@@ -42,5 +42,5 @@ For security reasons, no username in the default Realm (i.e. using conf/tomcat-u
     <role rolename="openmeap-admin"/>
     <role rolename="openmeap-user"/>
     <role rolename="manager-gui"/>
-    <user username="admin" password="C1tr1xMEAP" roles="openmeap-admin,openmeap-user,manager-gui"/>
+    <user username="openshift" password="openmeap" roles="openmeap-admin,openmeap-user,manager-gui"/>
 </tomcat-users>
