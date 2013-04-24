@@ -34,4 +34,4 @@ That's it, you can now checkout your OpenMEAP install at:
 
     https://openmeap-$yournamespace.rhcloud.com/openmeap-admin-web/interface/
 
-The default managing account is openmeap/openshift
+The default managing account is openshift/openmeap
