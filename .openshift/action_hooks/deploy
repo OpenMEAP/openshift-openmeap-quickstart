@@ -3,10 +3,3 @@
 # build hook has been run but before the application has been started back
 # up again.  This script gets executed directly, so it could be python, php,
 # ruby, etc.
- set -x
- if [ -d $OPENSHIFT_DATA_DIR/apache-tomcat-7.0.39 ]
-+    # copy war-files to the right place on server:
-+    cp -p $OPENSHIFT_REPO_DIR/diy/webapps/*.war $OPENSHIFT_DATA_DIR/apache-tomcat-7.0.39/webapps/
- then
-     exit 0
- else
