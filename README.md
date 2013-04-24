@@ -38,7 +38,7 @@ The default managing account.
 
 	openshift/openmeap
 
-Change your Global Settings & Cluster Nodes to be the same. 
+Once logged in, change your Global Settings & Cluster Nodes. 
 
 	External Service Url: https://$yournamespace/openmeap-services-web
 	Max File Upload Size: 100000000
