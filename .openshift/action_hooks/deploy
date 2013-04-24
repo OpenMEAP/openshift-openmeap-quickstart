@@ -3,3 +3,8 @@
 # build hook has been run but before the application has been started back
 # up again.  This script gets executed directly, so it could be python, php,
 # ruby, etc.
+set -x
+
+cp -rf $OPENSHIFT_HOMEDIR/diy-0.1/webapps $OPENSHIFT_DATA_DIR/apache-tomcat-7.0.39/webapps
+
+fi
