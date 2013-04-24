@@ -25,6 +25,5 @@ That's it, you can now checkout your tomcat at:
 
     http://openmeap-$yournamespace.rhcloud.com
 
-The default managing account is openmeap/openshift
 
-
+Deploy the OpenMEAP war files through the Tomcat Manager and add user roles to tomcat users.mxl
