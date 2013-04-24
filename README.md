@@ -54,10 +54,14 @@ Click Add Application.
 	Initial Version Identifier: 0.0.1a
 	See wiki.openmeap.com for users, groups and permissions
 
+Download OpenShift Mobile Application.
+
+	URL: http://www.openmeap.com/wp-content/uploads/apps/openshift.zip
+
 Click Applications and add a version.
 
 	Identifier: OpenShift
-	Upload: Search your openmeap directory on your machine and select to upload openshift.zip 
+	Upload: openshift.zip 
 	Submit
 
 Building the mobile clients.
