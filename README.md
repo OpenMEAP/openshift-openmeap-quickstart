@@ -18,6 +18,7 @@ Create the application.
 
 Navigate to the openmeap directory and as we are using an exploded war deployment, we will delete “pom.xml”
 
+	cd openmeap
 	git rm -rf src/ pom.xml
 	git commit -a -m 'removing default files'
 	
