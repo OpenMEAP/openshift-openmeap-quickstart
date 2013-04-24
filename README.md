@@ -42,7 +42,7 @@ Once logged in, change your Global Settings & Cluster Nodes.
 
 	External Service Url: https://$yournamespace/openmeap-services-web
 	Max File Upload Size: 100000000
-	File-system Storage Path Prefix: /var/lib/openshift/Syourhomrdirname/app-root/data
+	File-system Storage Path Prefix: /var/lib/openshift/Syourhomedirname/app-root/data
 	
 	Admin Server Accessible Service Url: https://$yournamespace/openmeap-services-web
-	File-system Storage Path Prefix: /var/lib/openshift/Syourhomrdirname/app-root/data
+	File-system Storage Path Prefix: /var/lib/openshift/Syourhomedirname/app-root/data
