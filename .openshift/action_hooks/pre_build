@@ -3,3 +3,10 @@
 # available.  Otherwise it will execute while your application is stopped
 # before the build step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
+
+# Source utility functions.
+source "$OPENSHIFT_REPO_DIR/.openshift/lib/utils"
+
+# Install tomcat7 if not already installed.
+is_tomcat7_installed  ||  install_tomcat7
+

@@ -1,0 +1,12 @@
+#!/bin/bash
+# The logic to stop your application should be put in this script.
+
+kill `ps -ef | grep testrubyserver.rb | grep -v grep | awk '{ print $2 }'` > /dev/null 2>&1
+
+# Source utility functions.
+source "$OPENSHIFT_REPO_DIR/.openshift/lib/utils"
+
+# Stop Tomcat 7.
+stop_tomcat7
+
+exit 0
