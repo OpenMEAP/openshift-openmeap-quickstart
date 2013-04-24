@@ -46,3 +46,24 @@ Once logged in, change your Global Settings & Cluster Nodes.
 	
 	Admin Server Accessible Service Url: https://$yournamespace/openmeap-services-web
 	File-system Storage Path Prefix: /var/lib/openshift/Syourhomedirname/app-root/data
+
+Click Add Application.
+
+	Name: OpenMEAP
+	Initial Version Identifier: 0.0.1a
+	See wiki.openmeap.com for users, groups and permissions
+
+Click Applications and add a version.
+
+	Identifier: OpenShift
+	Upload: Search your openmeap directory on your machine and select to upload openshift.zip 
+	Submit
+
+Building the mobile clients.
+----------------------------
+
+	Use: openmeap.slic.appMgmtServiceUrl=https://openmeap-$yournamespace.rhcloud.com/openmeap-services-web/application-management 
+	
+	See wiki.openmeap.com for building the SLIC clients.
+
+	
