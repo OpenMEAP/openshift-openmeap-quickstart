@@ -3,7 +3,7 @@ OpenMEAP on Tomcat 7 (JBoss EWS 2.0) using OpenShift
 
 This git repository helps you get up and running quickly w/ an OpenMEAP installation on Tomcat 7 (JBoss EWS 2.0) using OpenShift.
 
-Steps to get OpenMEAP deployed to JBoss EWS 2.0 running on OpenShift.
+Steps to get OpenMEAP deployed on OpenShift.
 ----------------------------
 
 Create an account at http://openshift.redhat.com/ , don't forget to create a namespace and install client tools as well.
@@ -14,7 +14,7 @@ Install the client tools on your machine if you have not already done so.
 
 Create the application.
 
-    	rhc app create -a openmeap -t jbossews-2.0
+    rhc app create -a openmeap -t jbossews-2.0
 
 Navigate to the openmeap directory and as we are using an exploded war deployment, we will delete “pom.xml”
 
@@ -32,7 +32,7 @@ Push the code to OpenShift.
 
 That's it, you can now checkout your OpenMEAP install at:
 
-    	https://openmeap-$yournamespace.rhcloud.com/openmeap-admin-web/interface/
+    https://openmeap-$yournamespace.rhcloud.com/openmeap-admin-web/interface/
 
 The default managing account. 
 
