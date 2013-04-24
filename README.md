@@ -1,4 +1,4 @@
-Deploy OpenMEAP on Tomcat 7 (JBoss EWS 2.0) using OpenShift
+OpenMEAP on Tomcat 7 (JBoss EWS 2.0) using OpenShift
 ============================
 
 This git repository helps you get up and running quickly w/ an OpenMEAP installation on Tomcat 7 (JBoss EWS 2.0) using OpenShift.
