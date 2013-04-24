@@ -1,0 +1,11 @@
+#!/bin/bash
+# The logic to start up your application should be put in this
+# script. The application will work only if it binds to
+# $OPENSHIFT_INTERNAL_IP:8080
+
+# Source utility functions.
+source "$OPENSHIFT_REPO_DIR/.openshift/lib/utils"
+
+# Start Tomcat 7.
+start_tomcat7
+
