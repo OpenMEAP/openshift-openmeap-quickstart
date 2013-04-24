@@ -19,6 +19,7 @@ Grab this quickstart codes and make it working for you!
     cd openmeap
     git remote add upstream -m master git://github.com/OpenMEAP/openshift-openmeap-quickstart
     git pull -s recursive -X theirs upstream master
+    (Use git mergetool -y if you have conflicts and commit git commit -am "merge completed")
     git push
 
 That's it, you can now checkout your tomcat at:
