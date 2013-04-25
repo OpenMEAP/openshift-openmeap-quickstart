@@ -14,22 +14,12 @@ Install the client tools on your machine if you have not already done so.
 
 Create the application.
 
-    rhc app create -a openmeap -t jbossews-2.0
+    rhc app create -a openmeap -t jbossews-2.0 --from-code git://github.com/OpenMEAP/openshift-openmeap-quickstart
 
-Navigate to the openmeap directory and as we are using an exploded war deployment, we will delete “pom.xml”
+Start the server on OpenShift.
 
 	cd openmeap
-	git rm -rf src/ pom.xml
-	git commit -a -m 'removing default files'
-	
-Grab this quickstart code and to get Tomcat 7 (JBoss EWS 2.0) running OpenMEAP.
-	
-	git remote add upstream -m master git://github.com/OpenMEAP/openshift-openmeap-quickstart
-	git pull -s recursive -X theirs upstream master
-	
-Push the code to OpenShift.
-
-	git push
+	rhc app restart -a openmeap
 
 That's it, you can now checkout your OpenMEAP install at:
 
@@ -41,11 +31,11 @@ The default managing account.
 
 Once logged in, change your Global Settings & Cluster Nodes. 
 
-	External Service Url: https://$yournamespace/openmeap-services-web
+	External Service Url: https://openmeap-$yournamespace.rhcloud.com/openmeap-services-web
 	Max File Upload Size: 100000000
 	File-system Storage Path Prefix: /var/lib/openshift/Syourhomedirname/app-root/data
 	
-	Admin Server Accessible Service Url: https://$yournamespace/openmeap-services-web
+	Admin Server Accessible Service Url: https://openmeap-$yournamespace.rhcloud.com/openmeap-services-web
 	File-system Storage Path Prefix: /var/lib/openshift/Syourhomedirname/app-root/data
 
 Click Add Application.
