@@ -6,7 +6,7 @@ This git repository helps you get up and running quickly w/ an OpenMEAP installa
 Steps to get OpenMEAP deployed on OpenShift.
 ----------------------------
 
-Create an account at http://openshift.redhat.com/ , don't forget to create a namespace and install client tools as well.
+Create an account at http://openshift.redhat.com/ , don't forget to create a namespace and install Git, Ruby and the client tools if needed.
 
 Install the client tools on your machine if you have not already done so.
 
