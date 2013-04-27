@@ -18,7 +18,7 @@ Create the application.
 
 Start the server on OpenShift.
 
-	rhc app restart -a openmeap
+	rhc app start -a openmeap
 
 That's it, you can now checkout your OpenMEAP install at:
 
@@ -28,10 +28,11 @@ The default managing account.
 
 	openshift/openmeap
 
-Once logged in, update Global Settings & Cluster Nodes. 
+Once logged in, update Global Settings & Cluster Nodes. If you don't update these, when you try to restart the app, it will fail.
 
-	Change yournamespace in both Service Urls: https://openmeap-$yournamespace.rhcloud.com/openmeap-services-web
-    Save Settings
+	Change yournamespace in both Service Urls: e.g. https://openmeap-$yournamespace.rhcloud.com/openmeap-services-web
+    Change the file path to point to your full data direcotry path: e.g. /var/lib/openshift/555555555555555555555555/app-root/data
+    Save Settings. 
 
 Building the mobile clients.
 ----------------------------
