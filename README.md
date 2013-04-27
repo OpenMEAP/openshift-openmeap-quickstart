@@ -18,7 +18,6 @@ Create the application.
 
 Start the server on OpenShift.
 
-	cd openmeap
 	rhc app restart -a openmeap
 
 That's it, you can now checkout your OpenMEAP install at:
@@ -33,10 +32,10 @@ Once logged in, change your Global Settings & Cluster Nodes.
 
 	External Service Url: https://openmeap-$yournamespace.rhcloud.com/openmeap-services-web
 	Max File Upload Size: 100000000
-	File-system Storage Path Prefix: /var/lib/openshift/Syourhomedirname/app-root/data
+	File-system Storage Path Prefix: app-root/data
 	
 	Admin Server Accessible Service Url: https://openmeap-$yournamespace.rhcloud.com/openmeap-services-web
-	File-system Storage Path Prefix: /var/lib/openshift/Syourhomedirname/app-root/data
+	File-system Storage Path Prefix: app-root/data
 
 Click Add Application.
 
