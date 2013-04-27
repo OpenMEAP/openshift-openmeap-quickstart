@@ -28,30 +28,10 @@ The default managing account.
 
 	openshift/openmeap
 
-Once logged in, change your Global Settings & Cluster Nodes. 
+Once logged in, update Global Settings & Cluster Nodes. 
 
-	External Service Url: https://openmeap-$yournamespace.rhcloud.com/openmeap-services-web
-	Max File Upload Size: 100000000
-	File-system Storage Path Prefix: app-root/data
-	
-	Admin Server Accessible Service Url: https://openmeap-$yournamespace.rhcloud.com/openmeap-services-web
-	File-system Storage Path Prefix: app-root/data
-
-Click Add Application.
-
-	Name: OpenMEAP
-	Initial Version Identifier: 0.0.1a
-	See wiki.openmeap.com for users, groups and permissions
-
-Download OpenShift Mobile Application.
-
-	URL: http://www.openmeap.com/wp-content/uploads/apps/openshift.zip
-
-Click Applications and add a version.
-
-	Identifier: OpenShift
-	Upload: openshift.zip 
-	Submit
+	Change yournamespace in both Service Urls: https://openmeap-$yournamespace.rhcloud.com/openmeap-services-web
+    Save Settings
 
 Building the mobile clients.
 ----------------------------
