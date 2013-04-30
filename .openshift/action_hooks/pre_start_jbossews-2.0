@@ -12,13 +12,3 @@
 # prevent your application from stopping cleanly or starting at all.
 # Application start and stop is subject to different timeouts
 # throughout the system.
-
-if [ -f $OPENSHIFT_TMP_DIR/openmeap.db ]
-then
-exit 0
-else
-cp -rf $OPENSHIFT_REPO_DIR/openmeap.db $OPENSHIFT_TMP_DIR
-cp -rf $OPENSHIFT_REPO_DIR/57c896f5e47c39a37b051f5bbfddd71e $OPENSHIFT_DATA_DIR
-cp -rf $OPENSHIFT_REPO_DIR/57c896f5e47c39a37b051f5bbfddd71e.zip $OPENSHIFT_DATA_DIR
-
-fi
