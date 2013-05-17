@@ -1,7 +1,7 @@
 /*
  ###############################################################################
  #                                                                             #
- #    Copyright (C) 2011-2012 OpenMEAP, Inc.                                   #
+ #    Copyright (C) 2011-2013 OpenMEAP, Inc.                                   #
  #    Credits to Jonathan Schang & Robert Thacher                              #
  #                                                                             #
  #    Released under the LGPLv3                                                #
@@ -22,17 +22,108 @@
  ###############################################################################
  */
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+html, div, span, object, iframe, h3, h4, h5, h6, 
 p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
 img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+dl, dt, dd, ol, fieldset, form, label, legend, 
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figure, figcaption, hgroup, 
 menu, footer, header, nav, section, summary, time, mark, audio, video {
 	margin: 0;
-	padding: 0;
+	padding: 2px;
 	border: 0;
+
 }
+
+h1 {
+  text-transform: capitalize;
+  -moz-text-shadow: -1px -1px 0 black;
+  -webkit-text-shadow: 2px 2px 2px black;
+  text-shadow: -1px -1px 0 black;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+  background: #CC0000;
+  width: auto;
+  margin: 1em 0em;
+  padding: .3em 0 .3em .3em;
+  position: relative;
+}
+  h1:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border: .5em solid #91010B;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  bottom: -1em;
+  left: 0;
+  z-index: -1000;
+}
+  h1:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border: .5em solid #91010B;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  bottom: -1em;
+  right: 0;
+  z-index: -1000;
+}
+  h2 {
+  margin: 2em 0 .5em;
+  border-bottom: 1px solid #999;
+}
+                    
+pre {
+   background: black;
+   padding: 1em 0 0;
+   -webkit-border-radius: 1em;
+   -moz-border-radius: 1em;
+   border-radius: 1em;
+   color: #9cf;
+}
+                    
+ul {
+    margin: 0;
+    padding: 0;
+}
+ li {
+   list-style-type: none;
+   padding: .5em 0;
+}
+                    
+.brand {
+    display: block;
+    text-decoration: none;
+}
+.brand .brand-image {
+    float: left;
+    border: none;
+}
+.brand .brand-text {
+    float: left;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 4px 0;
+    color: white;
+    text-transform: uppercase;
+}
+   .brand:hover,
+   .brand:active {
+   text-decoration: underline;
+}
+                    
+    .brand:before,
+    .brand:after {
+     content: ' ';
+     display: table;
+}
+     .brand:after {
+     clear: both;
+}
+
 
 article, aside, canvas, figure, figure img, figcaption, hgroup,
 footer, header, nav, section, audio, video {
@@ -40,47 +131,6 @@ footer, header, nav, section, audio, video {
 }
 
 a img {border: 0;}
-
-
-
-/*	Typography presets
-	------------------	*/
-
-.gigantic {
-	font-size: 110px;
-	line-height: 120px;
-	letter-spacing: -2px;
-}
-
-/*.huge, h1 {
-	font-size: 68px;
-	line-height: 72px;
-	letter-spacing: -1px;
-}*/
-
-.large, h2 {
-	font-size: 42px;
-	line-height: 48px;
-}
-
-.bigger, h3 {
-	font-size: 26px;
-	line-height: 36px;
-}
-
-.big, h4 {
-	font-size: 22px;
-	line-height: 30px;
-}
-
-body {
-	font: 16px/24px Georgia, serif;
-}
-
-.small, small {
-	font-size: 13px;
-	line-height: 18px;
-}
 
 /* Selection colours (easy to forget) */
 
@@ -100,10 +150,16 @@ cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
 body {
-	background: url(../img/splash_tablet.png) no-repeat 50% 0 transparent;
-	background-color: #323232;
-	width: 100%;
-	padding: 72px 48px 84px;
+    background: #333;
+    background: -webkit-linear-gradient(top, black, #666);
+    background: -o-linear-gradient(top, black, #666);
+    background: -moz-linear-gradient(top, black, #666);
+    background: linear-gradient(top, black, #666);
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
+    margin: auto;
+	width: auto;
+	padding: 72px 48px 300px;
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 }
 
@@ -120,10 +176,16 @@ px      68    160    252    344    436    528    620    712    */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	
 	body {
-		background: url(../img/splash_tablet.png) no-repeat 50% 0 transparent;
-		background-color: #323232;
-		width: 712px;
-		padding: 48px 28px 60px;
+    background: #333;
+    background: -webkit-linear-gradient(top, black, #666);
+    background: -o-linear-gradient(top, black, #666);
+    background: -moz-linear-gradient(top, black, #666);
+    background: linear-gradient(top, black, #666);
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
+    margin: auto;
+		width: auto;
+		padding: 48px 28px 300px;
 	}
 }
 
@@ -140,10 +202,16 @@ px      68    160    252    */
 @media only screen and (max-width: 767px) {
 	
 	body {
-		background: url(../img/splash_mobile_sm.png) no-repeat 50% 0 transparent;
-		background-color: #323232;
-		width: 252px;
-		padding: 48px 34px 60px;
+		    background: #333;
+    background: -webkit-linear-gradient(top, black, #666);
+    background: -o-linear-gradient(top, black, #666);
+    background: -moz-linear-gradient(top, black, #666);
+    background: linear-gradient(top, black, #666);
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
+    margin: auto;
+    width: auto;
+    padding: 48px 34px 150px;
 	}
 	
 }
@@ -161,10 +229,16 @@ px      68    160    252    344    436    */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	
 	body {
-		background: url(../img/splash_mobile.png) no-repeat 50% 0 transparent;
-		background-color: #323232;
-		width: 436px;
-		padding: 36px 22px 48px;
+		    background: #333;
+    background: -webkit-linear-gradient(top, black, #666);
+    background: -o-linear-gradient(top, black, #666);
+    background: -moz-linear-gradient(top, black, #666);
+    background: linear-gradient(top, black, #666);
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
+    margin: auto;
+		width: auto;
+		padding: 36px 22px 400px;
 	}
 	
 }
