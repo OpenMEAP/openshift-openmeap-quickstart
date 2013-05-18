@@ -16,10 +16,6 @@ Create the application.
 
     rhc app create -a openmeap -t jbossews-2.0 --from-code git://github.com/OpenMEAP/openshift-openmeap-quickstart
 
-Start the server on OpenShift.
-
-	rhc app start -a openmeap
-
 That's it, you can now checkout your OpenMEAP install at:
 
     https://openmeap-$yournamespace.rhcloud.com/openmeap-admin-web/interface/

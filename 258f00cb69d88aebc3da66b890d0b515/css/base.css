@@ -1,0 +1,260 @@
+/*
+ ###############################################################################
+ #                                                                             #
+ #    Copyright (C) 2011-2013 OpenMEAP, Inc.                                   #
+ #    Credits to Jonathan Schang & Robert Thacher                              #
+ #                                                                             #
+ #    Released under the LGPLv3                                                #
+ #                                                                             #
+ #    OpenMEAP is free software: you can redistribute it and/or modify         #
+ #    it under the terms of the GNU Lesser General Public License as published #
+ #    by the Free Software Foundation, either version 3 of the License, or     #
+ #    (at your option) any later version.                                      #
+ #                                                                             #
+ #    OpenMEAP is distributed in the hope that it will be useful,              #
+ #    but WITHOUT ANY WARRANTY; without even the implied warranty of           #
+ #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the            #
+ #    GNU Lesser General Public License for more details.                      #
+ #                                                                             #
+ #    You should have received a copy of the GNU Lesser General Public License #
+ #    along with OpenMEAP.  If not, see <http://www.gnu.org/licenses/>.        #
+ #                                                                             #
+ ###############################################################################
+ */
+
+html, div, span, object, iframe, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 2px;
+	border: 0;
+
+}
+
+h1 {
+  text-transform: capitalize;
+  -moz-text-shadow: -1px -1px 0 black;
+  -webkit-text-shadow: 2px 2px 2px black;
+  text-shadow: -1px -1px 0 black;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+  background: #CC0000;
+  width: auto;
+  margin: 1em 0em;
+  padding: .3em 0 .3em .3em;
+  position: relative;
+}
+  h1:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border: .5em solid #91010B;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  bottom: -1em;
+  left: 0;
+  z-index: -1000;
+}
+  h1:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border: .5em solid #91010B;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  bottom: -1em;
+  right: 0;
+  z-index: -1000;
+}
+  h2 {
+  margin: 2em 0 .5em;
+  border-bottom: 1px solid #999;
+}
+                    
+pre {
+   background: black;
+   padding: 1em 0 0;
+   -webkit-border-radius: 1em;
+   -moz-border-radius: 1em;
+   border-radius: 1em;
+   color: #9cf;
+}
+                    
+ul {
+    margin: 0;
+    padding: 0;
+}
+ li {
+   list-style-type: none;
+   padding: .5em 0;
+}
+                    
+.brand {
+    display: block;
+    text-decoration: none;
+}
+.brand .brand-image {
+    float: left;
+    border: none;
+}
+.brand .brand-text {
+    float: left;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 4px 0;
+    color: white;
+    text-transform: uppercase;
+}
+   .brand:hover,
+   .brand:active {
+   text-decoration: underline;
+}
+                    
+    .brand:before,
+    .brand:after {
+     content: ' ';
+     display: table;
+}
+     .brand:after {
+     clear: both;
+}
+
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body {
+    background: #333;
+    background: -webkit-linear-gradient(top, black, #666);
+    background: -o-linear-gradient(top, black, #666);
+    background: -moz-linear-gradient(top, black, #666);
+    background: linear-gradient(top, black, #666);
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
+    margin: auto;
+	width: auto;
+	padding: 72px 48px 300px;
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	body {
+    background: #333;
+    background: -webkit-linear-gradient(top, black, #666);
+    background: -o-linear-gradient(top, black, #666);
+    background: -moz-linear-gradient(top, black, #666);
+    background: linear-gradient(top, black, #666);
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
+    margin: auto;
+		width: auto;
+		padding: 48px 28px 300px;
+	}
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	body {
+		    background: #333;
+    background: -webkit-linear-gradient(top, black, #666);
+    background: -o-linear-gradient(top, black, #666);
+    background: -moz-linear-gradient(top, black, #666);
+    background: linear-gradient(top, black, #666);
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
+    margin: auto;
+    width: auto;
+    padding: 48px 34px 150px;
+	}
+	
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	body {
+		    background: #333;
+    background: -webkit-linear-gradient(top, black, #666);
+    background: -o-linear-gradient(top, black, #666);
+    background: -moz-linear-gradient(top, black, #666);
+    background: linear-gradient(top, black, #666);
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
+    margin: auto;
+		width: auto;
+		padding: 36px 22px 400px;
+	}
+	
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	body {
+	
+	}
+	
+}
