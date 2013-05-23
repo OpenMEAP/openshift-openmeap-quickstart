@@ -14,3 +14,5 @@
 # throughout the system.
 
 
+declare -x OPENMEAP_JDBC_URL=jdbc:sqlite:/$OPENSHIFT_DATA_DIR/openmeap.db
+fi
