@@ -13,7 +13,6 @@
 # Application start and stop is subject to different timeouts
 # throughout the system.
 
-export OPENMEAP_JDBC_URL=jdbc:sqlite:/$OPENSHIFT_DATA_DIR/openmeap.db
 if [ -f $OPENSHIFT_DATA_DIR/openmeap.db ]
 then
   Database Installed
