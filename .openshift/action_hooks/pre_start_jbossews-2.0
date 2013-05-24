@@ -13,12 +13,14 @@
 # Application start and stop is subject to different timeouts
 # throughout the system.
 
+export OPENMEAP_JDBC_URL=jdbc:sqlite:/$OPENSHIFT_DATA_DIR/openmeap.db
 if [ -f $OPENSHIFT_DATA_DIR/openmeap.db ]
 then
-  declare -x OPENMEAP_JDBC_URL=jdbc:sqlite:/$OPENSHIFT_DATA_DIR/openmeap.db
+  Database Installed
 else
+export OPENMEAP_JDBC_URL=jdbc:sqlite:/$OPENSHIFT_DATA_DIR/openmeap.db
 cp -rf $OPENSHIFT_REPO_DIR/openmeap.db $OPENSHIFT_DATA_DIR
 cp -rf $OPENSHIFT_REPO_DIR/258f00cb69d88aebc3da66b890d0b515 $OPENSHIFT_DATA_DIR
 cp -rf $OPENSHIFT_REPO_DIR/258f00cb69d88aebc3da66b890d0b515.zip $OPENSHIFT_DATA_DIR
-declare -x OPENMEAP_JDBC_URL=jdbc:sqlite:/$OPENSHIFT_DATA_DIR/openmeap.db
+
 fi
