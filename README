@@ -9,10 +9,10 @@ pom.xml - Maven build file
 .openshift/action_hooks/build - Script that gets run every git push as part of the build process (on the CI system if available)
 .openshift/action_hooks/deploy - Script that gets run every git push after build but before the app is restarted
 .openshift/action_hooks/post_deploy - Script that gets run every git push after the app is restarted
-.openshift/action_hooks/pre_start_jbossews-2.0 - Script that gets run prior to starting EWS2.0
-.openshift/action_hooks/post_start_jbossews-2.0 - Script that gets run after EWS2.0 is started
-.openshift/action_hooks/pre_stop_jbossews-2.0 - Script that gets run prior to stopping EWS2.0
-.openshift/action_hooks/post_stop_jbossews-2.0 - Script that gets run after EWS2.0 is stopped
+.openshift/action_hooks/pre_start_jbossews - Script that gets run prior to starting EWS2.0
+.openshift/action_hooks/post_start_jbossews - Script that gets run after EWS2.0 is started
+.openshift/action_hooks/pre_stop_jbossews - Script that gets run prior to stopping EWS2.0
+.openshift/action_hooks/post_stop_jbossews - Script that gets run after EWS2.0 is stopped
 
 
 Notes about layout
