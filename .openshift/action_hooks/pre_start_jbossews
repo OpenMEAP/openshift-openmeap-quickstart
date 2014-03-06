@@ -13,11 +13,9 @@
 # Application start and stop is subject to different timeouts
 # throughout the system.
 
-export OPENMEAP_JDBC_URL=jdbc:sqlite:/$OPENSHIFT_DATA_DIR/openmeap.db
-
 if [ -f $OPENSHIFT_DATA_DIR/openmeap.db ]
 then
-  echo "Database Installed"
+  export OPENMEAP_JDBC_URL=jdbc:sqlite:/$OPENSHIFT_DATA_DIR/openmeap.db
 else
 export OPENMEAP_JDBC_URL=jdbc:sqlite:/$OPENSHIFT_DATA_DIR/openmeap.db
 cp -rf $OPENSHIFT_REPO_DIR/openmeap.db $OPENSHIFT_DATA_DIR
