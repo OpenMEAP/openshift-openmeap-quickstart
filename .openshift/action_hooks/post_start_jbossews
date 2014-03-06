@@ -13,4 +13,8 @@
 # Application start and stop is subject to different timeouts
 # throughout the system.
 
+if [ -f $OPENSHIFT_DATA_DIR/openmeap.db ]
+
 export OPENMEAP_JDBC_URL=jdbc:sqlite:/$OPENSHIFT_DATA_DIR/openmeap.db
+
+fi
