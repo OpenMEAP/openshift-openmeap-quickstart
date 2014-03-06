@@ -14,5 +14,3 @@
 # throughout the system.
 
 export OPENMEAP_JDBC_URL=jdbc:sqlite:/$OPENSHIFT_DATA_DIR/openmeap.db
-
-fi
