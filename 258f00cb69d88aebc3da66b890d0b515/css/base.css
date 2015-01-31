@@ -35,49 +35,13 @@ menu, footer, header, nav, section, summary, time, mark, audio, video {
 
 }
 
-h1 {
-  text-transform: capitalize;
-  -moz-text-shadow: -1px -1px 0 black;
-  -webkit-text-shadow: 2px 2px 2px black;
-  text-shadow: -1px -1px 0 black;
-  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
-  background: #CC0000;
-  width: auto;
-  margin: 1em 0em;
-  padding: .3em 0 .3em .3em;
-  position: relative;
-}
-  h1:before {
-  content: '';
-  width: 0;
-  height: 0;
-  border: .5em solid #91010B;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-  position: absolute;
-  bottom: -1em;
-  left: 0;
-  z-index: -1000;
-}
-  h1:after {
-  content: '';
-  width: 0;
-  height: 0;
-  border: .5em solid #91010B;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  position: absolute;
-  bottom: -1em;
-  right: 0;
-  z-index: -1000;
-}
   h2 {
   margin: 2em 0 .5em;
   border-bottom: 1px solid #999;
 }
                     
 pre {
-   background: black;
+   background: #222936;
    padding: 1em 0 0;
    -webkit-border-radius: 1em;
    -moz-border-radius: 1em;
@@ -150,11 +114,11 @@ cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
 body {
-    background: #333;
-    background: -webkit-linear-gradient(top, black, #666);
-    background: -o-linear-gradient(top, black, #666);
-    background: -moz-linear-gradient(top, black, #666);
-    background: linear-gradient(top, black, #666);
+    background: #222936;
+    background: -webkit-linear-gradient(top, #222936);
+    background: -o-linear-gradient(top, #222936);
+    background: -moz-linear-gradient(top, #222936);
+    background: linear-gradient(top, #222936);
     color: white;
     font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
     margin: auto;
@@ -176,11 +140,11 @@ px      68    160    252    344    436    528    620    712    */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	
 	body {
-    background: #333;
-    background: -webkit-linear-gradient(top, black, #666);
-    background: -o-linear-gradient(top, black, #666);
-    background: -moz-linear-gradient(top, black, #666);
-    background: linear-gradient(top, black, #666);
+    background: #222936;
+    background: -webkit-linear-gradient(top, #222936);
+    background: -o-linear-gradient(top, #222936);
+    background: -moz-linear-gradient(top, #222936);
+    background: linear-gradient(top, #222936);
     color: white;
     font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
     margin: auto;
@@ -202,11 +166,11 @@ px      68    160    252    */
 @media only screen and (max-width: 767px) {
 	
 	body {
-		    background: #333;
-    background: -webkit-linear-gradient(top, black, #666);
-    background: -o-linear-gradient(top, black, #666);
-    background: -moz-linear-gradient(top, black, #666);
-    background: linear-gradient(top, black, #666);
+		    background: #222936;
+    background: -webkit-linear-gradient(top, #222936);
+    background: -o-linear-gradient(top, #222936);
+    background: -moz-linear-gradient(top, #222936);
+    background: linear-gradient(top, #222936);
     color: white;
     font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
     margin: auto;
@@ -229,11 +193,11 @@ px      68    160    252    344    436    */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	
 	body {
-		    background: #333;
-    background: -webkit-linear-gradient(top, black, #666);
-    background: -o-linear-gradient(top, black, #666);
-    background: -moz-linear-gradient(top, black, #666);
-    background: linear-gradient(top, black, #666);
+		    background: #222936;
+    background: -webkit-linear-gradient(top, #222936);
+    background: -o-linear-gradient(top, #222936);
+    background: -moz-linear-gradient(top, #222936);
+    background: linear-gradient(top, #222936);
     color: white;
     font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
     margin: auto;
